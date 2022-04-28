@@ -1,0 +1,29 @@
+$layout-breakpoint-small: 576px;
+$layout-breakpoint-medium: 768px;
+$layout-breakpoint-large: 992px;
+$layout-breakpoint-extralarge: 1480px;
+
+.content {
+  max-width: $layout-breakpoint-small;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  @media (min-width: $layout-breakpoint-small) {
+    max-width: $layout-breakpoint-small;
+    padding: 0;
+  }
+
+  @media (min-width: $layout-breakpoint-medium) {
+    max-width: $layout-breakpoint-medium;
+  }
+
+  @media (min-width: $layout-breakpoint-large) {
+    max-width: $layout-breakpoint-large;
+  }
+
+  @media (min-width: $layout-breakpoint-extralarge) {
+    max-width: $layout-breakpoint-extralarge;
+  }
+}

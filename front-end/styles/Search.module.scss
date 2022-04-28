@@ -1,0 +1,24 @@
+@import '@/styles/responsive.scss';
+@import '@/styles/values.scss';
+
+
+.searchBar {
+    width: 100%;
+      max-width: 640px;
+      height: 64px;
+      padding: 8px 24px;
+      background: rgba($black-color, 0.45);
+      border: none;
+      border-radius: 16px;
+      color: #e6ad64;
+      font-size: 20px;
+      font-family: $title-font;
+      transition: 0.1s ease-out;
+      &::placeholder {
+        color: #e6ad64;
+        font-weight: bold;
+      }
+      &:hover {
+        background: rgba($black-color, 0.55);
+      }
+  }
