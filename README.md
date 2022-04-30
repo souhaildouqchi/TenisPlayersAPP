@@ -1,10 +1,10 @@
 ## Tennis Player app
 
-APP used to display tennis players and there details.
+APP used to display tennis players and their details.
 
 ## Deployed using:
 
-- heruoko for the back-end project 
+- heroku for the back-end project 
 - vercel for the fron-end project 
 
 Please visit the folowing link for demo : 
