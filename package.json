@@ -10,7 +10,9 @@
     "start": "node back-end/server.js",
     "server": "nodemon back-end/server.js",
     "client": "npm run dev --prefix front-end",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "cd front-end && npm install --only=dev && npm install && npm run build"
+
   },
   "keywords": [],
   "author": "",
