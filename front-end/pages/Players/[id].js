@@ -1,7 +1,9 @@
 import React from "react";
 import { useRouter } from "next/router";
 export const getStaticPaths = async () => {
-  const res = await fetch("http://localhost:5000/api/players");
+  const res = await fetch(
+    "https://tennis-player-app.herokuapp.com/api/players"
+  );
   const data = await res.json();
 
   // map data to an array of path objects with params (id)
@@ -19,7 +21,9 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
   const id = context.params.id;
-  const res = await fetch("http://localhost:5000/api/players/" + id);
+  const res = await fetch(
+    "https://tennis-player-app.herokuapp.com/api/players/" + id
+  );
   const data = await res.json();
   return {
     props: { player: data },

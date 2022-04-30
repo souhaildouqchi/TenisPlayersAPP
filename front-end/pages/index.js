@@ -6,7 +6,9 @@ import React, { useState } from "react";
 
 // function runs at build time, never runs in the browser
 export const getStaticProps = async () => {
-  const res = await fetch("http://localhost:5000/api/players");
+  const res = await fetch(
+    "https://tennis-player-app.herokuapp.com/api/players"
+  );
   const data = await res.json();
 
   return {
